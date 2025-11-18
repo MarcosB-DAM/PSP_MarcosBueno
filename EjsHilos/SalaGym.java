@@ -12,6 +12,5 @@ public class SalaGym{
                 Thread.sleep(100);
             }catch(InterruptedException e){ }
         }
-        System.out.println("SE CIERRA EL GIMNASIO");
     }
 }
