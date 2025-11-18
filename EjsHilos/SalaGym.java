@@ -4,7 +4,7 @@ public class SalaGym{
 
     public static void main(String[] args) {
         ColaGym cola = new ColaGym();
-        for(int i = 1; i < numClientes; i++){
+        for(int i = 1; i <= numClientes; i++){
             Cliente c = new Cliente(i, cola);
             c.start();
             try{
