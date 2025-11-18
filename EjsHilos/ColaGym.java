@@ -1,5 +1,4 @@
 public class ColaGym{
-    private boolean hueco = false;
     private int contador;
     private int aforoMax = 5;
     
