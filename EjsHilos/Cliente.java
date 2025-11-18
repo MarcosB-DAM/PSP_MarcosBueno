@@ -8,9 +8,12 @@ public class Cliente extends Thread{
     }
 
     public void run(){
+        Random rand = new Random();
+        int estancia;
+        estancia = rand.nextInt(600 - 200 + 1) + 200;
         try{
             cola.entrar(id);
-            sleep(500);
+            sleep(estancia);
             System.out.println("Cliente " + id + " entrenando");
             cola.salir(id);
         }catch(InterruptedException e){
