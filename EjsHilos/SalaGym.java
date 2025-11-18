@@ -4,6 +4,7 @@ public class SalaGym{
 
     public static void main(String[] args) {
         ColaGym cola = new ColaGym();
+        System.out.println("SE ABRE EL GIMNASIO");
         for(int i = 1; i <= numClientes; i++){
             Cliente c = new Cliente(i, cola);
             c.start();
@@ -11,5 +12,6 @@ public class SalaGym{
                 Thread.sleep(100);
             }catch(InterruptedException e){ }
         }
+        System.out.println("SE CIERRA EL GIMNASIO");
     }
 }
