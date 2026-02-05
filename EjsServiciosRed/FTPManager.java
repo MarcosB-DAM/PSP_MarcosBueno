@@ -83,7 +83,6 @@ public class FTPManager {
                     } 
                     else if (comando.equals("put")) {
                         if (input.length > 2) {
-                            // Uso: put <rutaLocal> <rutaRemota> 
                             uploadFile(cliente, input[1], input[2]);
                         } else {
                             System.out.println("Error: Uso: put <rutaLocal> <rutaRemota>");
@@ -91,7 +90,6 @@ public class FTPManager {
                     } 
                     else if (comando.equals("get")) {
                         if (input.length > 2) {
-                            // Uso: get <rutaRemota> <rutaLocal> 
                             downloadFile(cliente, input[1], input[2], sc);
                         } else {
                             System.out.println("Error: Uso: get <rutaRemota> <rutaLocal>");
